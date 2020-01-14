@@ -1,16 +1,374 @@
-<!DOCTYPE html>
+
+<!DOCTYPE HTML>
 <html>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <head>
-        <title>My Personal Site</title>
-    </head>
-    <body>
-        <header>Welcome To My Personal Website</header>
-        <p>Thanks for visiting my first personal website, currently undergoing maintenance</p>
-        <img
-      src="data:image/png;base64,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"
-      alt="Undergoing maintenace"
-    />
-    </body>
+	<head>
+		<title>W.Whitted Full-Stack Developer</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+		<!-- External Google Fonts-->
+		<link rel="stylesheet" href="https://use.typekit.net/ouz8cvc.css">
+
+		<!-- Style Sheets -->
+		<link rel="stylesheet" href="assets/css/reset.css"/>
+		<link rel="stylesheet" href="assets/css/main.css"/>
+        <link rel="stylesheet" href="assets/css/style.css">
+
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+	</head>
+
+	<body class="landing is-preload">
+
+			<!-- Header -->
+				<header id="header" class="alt" >
+					<h1 style="background-color: black"><a href="index.html">W.Whitted</a></h1>
+					<nav id="nav">
+						<ul>
+							<li class="special">
+								<h1><a href="#menu" class="menuToggle" style="padding-right: 200px; padding-left: 0;"><span>Menu</span></a></h1>
+								<div id="menu">
+									<ul>
+										<li><a style=" color: rgb(172, 172, 172);" href="#down-arrow">About Me</a></h2></li>
+										<li><a style=" color: rgb(172, 172, 172)" href="#portfolio-arrow">Portfolio</a></li>
+										<li><a style=" color: rgb(172, 172, 172)" href="assets/resume/WilliamWhittedResume.pdf" target="_blank">Resume</a></li>
+										<li><a style=" color: rgb(172, 172, 172)"  href="#contact-arrow">Contact</a></li>
+
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</nav>
+					
+				</header>
+
+			<!-- Banner -->
+				<section class="container-full-height" >
+					<div id="banner">
+					<div class="inner">
+						<h2>William Whitted</h2>
+						
+						<p><br>Full-Stack Developer</p>
+					</div>
+					<a href="#down-arrow" class="more scrolly alt"></a>
+				</div>
+				</section>
+			<div id="down-arrow"></div>
+			<!-- One -->
+			<div class="container-full-height"> 
+				<section id="one one-small-screen" class="wrapper style1 special" style="width: 100vw">
+					<section class="spotlight1">
+						<div class="spotlight-box">
+							<div class="image profile-box cover-right">
+								<img style="width:80%" id="profile-image"  src="assets/images/williamwhitted.JPG"  alt="William Whitted">
+							</div>
+						
+							<div class="profile-text-box text-left" style="border: none!important; margin-right: 60px;">
+									<h2 class="text-center" id="about-me">Hi, I'm William!</h2>
+									<p style="padding-top: 2em">I am a Full-Stack Web Developer.</p>
+									<p>I recently received full-stack certification through the UNC Chapel Hill Coding Bootcamp and am now looking to begin a new career in the software industry. </p>
+								
+                                    <p>To view some of my work, or contact me scroll below </p> 
+                                    <p>If you'd like to test out the app click the image, curious about the code, click the title!</p>
+                                    <p>Click here to view my 
+										<a href="assets/resume/WilliamWhittedResume.pdf" target="_blank" class="scrolly nav-tags alt">Resume</a> 
+									</p>
+								
+									<p style="text-indent: 3em">- Thank you for visiting my site!</p>
+								</div>
+							</div>
+					</section>
+				</section>
+			</div>
+			<div id="portfolio-arrow"></div>
+			<!-- Portfolio Projects -->
+				<section id="two" class="wrapper alt style2">
+					<a name="portfolio"></a>
+					<div class="header-wrapper" style="margin: 0 14vw; ">
+						<div id="portfolio" class="alt">
+							<h1><a href="">PORTFOLIO</a></h1>
+						</div>
+					</div>
+					<!-- Movie Comparison App | left -->
+					<section class="spotlight">
+						<div class="spotlight-box">
+							<div class="image cover-box cover-left">
+								<a href="https://fzachary.github.io/project1/" target="_blank">
+									<img href="https://fzachary.github.io/project1/" target="_blank" src="assets/images/moviecomparison.png" alt="Full-Stack Web Application" />
+								</a>
+							</div>
+						
+							<div class="project-description text-box text-right">
+								<h2><a href="https://fzachary.github.io/project1/" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span> Movie Comparison App</h2></a>
+								<p> Movie Comparison App allows users to search for movies and compare them by budget, box office totals, and ratings from three different movie ratings sites.</p>
+								<p><strong class="details">FRAMEWORK: </strong>Materialize</p>
+								<p><strong class="details">DEVELOPMENT: </strong>HTML5, CSS, JavaScript, JQuery, Node, Express, JSON, Ajax, Git, OMDB and Wikipedia API's, Chart.js</p>
+							</div>
+						</div>
+					</section>
+
+					<!-- S-I-S Student Information System | Right -->
+					<section class="spotlight">
+						<div class="spotlight-box">
+							<div class="image cover-box cover-right">
+								<a href="https://william-project2.herokuapp.com/" target="_blank">
+									<img href="https://william-project2.herokuapp.com/" target="_blank" src="assets/images/sis.png" alt="Full-Stack Web Application" />
+								</a>
+							</div>
+							
+							<div class="project-description text-box text-left">
+                                <h2><a href="https://github.com/youngedre/project2" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span> Student Information System</h2></a>								<p> S-I-S (Student Information System) streamlines the registration process of preschool enrollment by providing parents with a digital portal to store and update their children's information. No paper, no redundancy, just an effortless and efficient means of communication between preschool teachers and parents.</p>
+								<p><strong class="details">DESIGN: </strong> Adobe XD, Adobe Illustrator, Adobe Photoshop</p>
+								<p><strong class="details">FRAMEWORK: </strong>Zurb Foundation 6</p>
+								<p><strong class="details">DEVELOPMENT: </strong>HTML5, CSS, JavaScript, JQuery, Gulp, Bower, Node, Mockaroo-API, MySQL, Sequelize, Passport, Handlebars, Express, JSON, Ajax, Git, Heroku</p> 
+							</div>
+						</div>
+					</section> 
+					<!-- Super Holiday Shopper | Left -->
+					<section class="spotlight">
+						<div class="spotlight-box">
+							<div class="image cover-box cover-left">
+								<a href="https://peaceful-bastion-36664.herokuapp.com/" target="_blank">
+									<img href="https://peaceful-bastion-36664.herokuapp.com/" target="_blank" src="assets/images/superholidayshopper.png" alt="Super Holiday Shopper" />
+								</a>
+							</div>
+						
+							<div class="project-description text-box text-right">
+								<h2><a href="https://github.com/youngedre/project3" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span> Super Holiday Shopper</h2></a>
+								<p> Super Holiday Shopper is a react app that simplifies the shopping experience for all!</p>
+								<p><strong class="details">FRAMEWORK: </strong>Bootstrap and Semantics UI</p>
+								<p><strong class="details">DEVELOPMENT: </strong>HTML5, CSS, JavaScript, JQuery, React-Bootstrap, Semantics UI, Puppeteer, Axios, Node, Git, MLab MongoDB, Heroku</p>
+							</div>
+						</div>
+					</section>
+
+					<!-- Clicky Game | Right -->
+					<section class="spotlight">
+						<div class="spotlight-box">
+							<div class="image cover-box cover-right">
+								<a href="https://youngedre.github.io/clickygame/" target="_blank">
+									<img href="https://youngedre.github.io/clickygame/" target="_blank" src="assets/images/clickygame.png" alt="Clicky Game" />
+								</a>
+							</div>
+						
+							<div class="project-description text-box text-left">
+								<h2><a href="https://github.com/JAE-S/Google-Book-Search" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span> Hero Clicky Game</h2></a>
+								<p>A memory game built using react, start by clicking a hero and see how many different heroes you can click without hitting one more than once!</p>
+								<p><strong class="details">FRAMEWORK: </strong>Bootstrap</p>
+								<p><strong class="details">DEVELOPMENT: </strong>React, Node, HTML, CSS, Git,</p>
+							</div>
+						</div>
+					</section>
+
+					<!-- Trivia Game | Left -->
+					<section class="spotlight">
+						<div class="spotlight-box">
+							<div class="image cover-box cover-left">
+								<a href="https://youngedre.github.io/TriviaGame/" target="_blank">
+									<img href="https://youngedre.github.io/TriviaGame/" target="_blank" src="assets/images/trivia.jpg" alt="Family Guy Trivia" />
+								</a>
+							</div>
+						
+							<div class="project-description text-box text-right">
+								<h2><a href="https://github.com/youngedre/TriviaGame" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span>Family Guy Trivia</h2></a>
+								<p>A simple timed trivia game based on the popular tv show, Family Guy!</p>
+								<p><strong class="details">FRAMEWORK: </strong>Bootstrap</p>
+								<p><strong class="details">DEVELOPMENT: </strong>HTML5, CSS, JavaScript, Node</p>
+							</div>
+						</div>
+					</section>					
+
+					<!-- Word Guess Game | Right -->
+					<section class="spotlight">
+						<div class="spotlight-box">
+							<div class="image cover-box cover-right">
+                                <a href="https://youngedre.github.io/Word-Guess-Game/" target="_blank">
+                                    <img href="https://youngedre.github.io/Word-Guess-Game/" target="_blank" src="assets/images/wordguess.png" alt="NBA Word Guess" />
+								</a>
+							</div>
+						
+							<div class="project-description text-box text-left">
+								<h2><a href="https://github.com/youngedre/Word-Guess-Game" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span> NBA Word Guess</h2></a>
+								<p> An NBA themed hangman game with a word bank full of NBA team names, guess the letters to get the name, 9 incorrect answers and you lose!</p>
+								<p><strong class="details">FRAMEWORK: </strong>Bootstrap</p>
+								<p><strong class="details">DEVELOPMENT: </strong>HTML5, CSS, JavaScript,JQuery, Git</p> 
+							</div>
+						</div>
+					</section>
+
+					<!-- Friend Finder | Left -->
+					<section class="spotlight">
+						<div class="spotlight-box">
+							<div class="image cover-box cover-left">
+								<a href="https://sleepy-coast-88484.herokuapp.com/" target="_blank">
+									<img src="assets/images/friendfinder.png" alt=" Friend Finder" />
+								</a>
+							</div>
+						
+							<div class="project-description text-box text-right">
+								<h2><a href="https://github.com/youngedre/friendFinder" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span> Friend Finder</h2></a>
+								<p> Friend finder is a compatibility based application created to take survey data and compare it to the previously inserted data as well as any people who fill out the survey themselves thus adding to the friends list. </p>
+								<p><strong class="details">FRAMEWORK: </strong>Bootstrap</p>
+								<p><strong class="details">DEVELOPMENT: </strong>HTML5, CSS, JavaScript, JQuery, Node, MySQL, Express, Ajax, Git, Heroku</p> 
+							</div>
+						</div>
+					</section>
+
+					<!-- Crystal Collector | Right -->
+					<section class="spotlight">
+						<div class="spotlight-box">	
+							<div class="image cover-box cover-right">
+								<a href="https://github.com/youngedre/unit-4-game-crystals" target="_blank" title="Crystal-Collector">
+									<img src="assets/images/crystalcollector.png" alt="Crystal-Collector" />
+								</a>
+							</div>
+							<div class="project-description text-box text-left">
+								<h2><a href="https://youngedre.github.io/unit-4-game-crystals/" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span> Crystal Collector</h2></a>
+								<p> In this unique twist on a math game the user collects colorful crystals of differing values in an effort to match a target value..</p>
+								<p><strong class="details">FRAMEWORK: </strong>Bootstrap</p>
+								<p><strong class="details">DEVELOPMENT: </strong>HTML5, CSS, JavaScript, JQuery, Git</p>
+							</div>
+							
+						</div>
+					</section>
+
+					<!-- Bamazon | Left -->
+					<section class="spotlight">
+						<div class="spotlight-box">
+							<div class="image cover-box cover-left">
+								<a href="https://github.com/youngedre/bamazon" target="_blank">
+									<img src="assets/images/node.png" alt="bamazon" />
+								</a>
+							</div>
+						
+							<div class="project-description text-box text-right">
+								<h2><a href="https://github.com/youngedre/bamazon" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span> bamazon</h2></a> 
+                                <p>This is a Node based amazon-like storefront app. Built with node.js and mysql, this will allow full interactivity within the console. The customer view uses inquirer to ask what product you would like to search for. It will then display all items in the inventory showing the product id number, name, department, price, and quantity of items in stock and enters the product number and desired quantity</p>
+                                <p>Note: This is a CLI application meaning to interact you must clone the repository and run locally</p>
+								<p><strong class="details">DEVELOPMENT: </strong>JavaScript, Node, MySQL, Inquirer, Git</p> 
+							</div>
+						</div>
+                    </section>
+                    
+                    <!-- Giftastic | Right -->
+					<section class="spotlight">
+						<div class="spotlight-box">
+							<div class="image cover-box cover-right">
+								<a href="https://youngedre.github.io/GifTastic/" target="_blank">
+									<img src="assets/images/giftsastic.png" alt="Giphy Generator" />
+								</a>
+							</div>
+						
+							<div class="project-description text-box cover-left">
+								<h2><a href="https://github.com/youngedre/GifTastic" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span> Giftastic</h2></a>
+								<p>An application created using the GIPHY API designed like a search engine to find whatever gif you're looking for!</p>
+								<p><strong class="details">FRAMEWORK: </strong>Bootstrap</p>
+								<p><strong class="details">DEVELOPMENT: </strong>HTML5, CSS, JavaScript, JQuery, GIPHY API, Git</p> 
+							</div>
+						</div>
+                    </section>
+                    
+					<!-- Liri Bot App | Left -->
+					<section class="spotlight">
+						<div class="spotlight-box">
+							<div class="image cover-box cover-left">
+								<a href="https://github.com/youngedre/liri-node-app" target="_blank">
+									<img src="assets/images/node.png" alt="CLI - Liri Bot App" />
+								</a>
+							</div>
+						
+							<div class="project-description text-box text-right">
+								<h2><a href="https://github.com/youngedre/liri-node-app" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span> CLI - LIRI BOT APP</h2></a>
+                                <p> Liri Bot is a CLI app that serves as a Language Interpretation and Recognition Interface. Liri responds to 4 commands and retrieves the answers by querying the following API's: Spotify, OMDB, and Bands In Town.</p>
+                                <p>Note: as a CLI app you must clone the repository to interface with liri </p>
+								<p><strong class="details">DEVELOPMENT: </strong> Javascript, Node, Axios, Moment, Chalk, Dontenv, Git</p>
+							</div>
+						</div>
+					</section>
+
+					
+
+			</section> 
+			<div id="contact-arrow"></div>
+			<!-- Section -->
+			<div class="container-full-height margins"> 
+				<div id="container-contact">
+				<section id="contact">
+					<a name="contact"></a>
+					<div class="small-screen"> 
+							<h2 style="color: #F31B00">Contact Details</h2>
+							<p id="resume"><a href="" class="teal-text alt" style="margin-right: 5px; font-weight: bold"> Resume:</a>
+							<a href="assets/resume/WilliamWhittedResume.pdf" target="_blank" class="alt">Click to View</p></a>
+							
+							<p><a href="" class="teal-text alt" style="margin-right: 5px; font-weight: bold"> Email:</a>
+							<small>youngedre@gmail.com</small></p>
+							<p><a href="https://www.linkedin.com/in/william-whitted-013401188/" class="teal-text alt"style="margin-right: 5px; font-weight: bold"> Linkedin:</a></h2>
+                                linkedin.com/in/william-whitted-013401188</p>
+
+							<p><a href="https://github.com/youngedre" class="teal-text alt" style="margin-right: 5px; font-weight: bold"> Github: </a>
+                                github.com/youngedre</p>
+							<h2 style=" color: #F31B00">Get in touch</h2>
+					</div>
+					<h2 class="medium-screen" style="border-bottom: 4px double black; padding-bottom: 10px; color: #F31B00">Get in touch: </h2>
+					
+						<div class="box-contact"> 
+						<div class="left-contact"> 
+							<h2 id="resume" class="teal-text contact-details"><a href="" class="alt"> Resume</a></h2>
+							<a href="assets/resume/WilliamWhittedResume.pdf" class="alt"><p><small>Click to View</small></p></a>
+							
+							<h2 class="teal-text contact-details"><a href="" class="alt"> Email</a></h2>
+							<p><small>youngedre@gmail.com</small></p>
+
+							<h2 class="teal-text contact-details"><a href="https://www.linkedin.com/in/william-whitted-013401188/" class="alt"> Linkedin</a></h2>
+							<p><small>linkedin.com/in/william-whitted-013401188</small></p>
+
+							<h2 class="teal-text contact-details"><a href="https://github.com/youngedre" class="alt"> Github</a></h2>
+							<p><small>github.com/youngedre</small></p>
+						</div>
+						<div class="right-contact"> 
+							<form autocomplete="off" method="post" action="https://formspree.io/youngedre@gmail.com">
+								<div class="fields">
+									<div class="field half">
+										<input type="text" name="name" id="name" placeholder="Name" />
+									</div>
+									<div class="field half">
+										<input type="email" name="email" id="email" placeholder="Email" />
+									</div>
+									<div class="field">
+										<textarea name="message" id="message" placeholder="Message" rows="7"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input id="send" type="submit" value="Send" class="button primary" /></li>
+								</ul>
+							</form>
+						</div>
+					</div>
+				</section>
+			</div>
+			</div>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/william-whitted-013401188/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/youngedre" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="mailto:youngedre@gmail.com?" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; 2020</li><li>W.Whitted</li>
+					</ul>
+				</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+
+	</body>
 </html>
